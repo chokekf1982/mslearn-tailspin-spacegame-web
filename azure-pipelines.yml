@@ -7,8 +7,9 @@ pool:
   - npm
 
 variables:
-  buildConfiguration: 'Release'
-  group: Development
+  - name: buildConfiguration
+    value: 'Release'
+  - group: Development
 
 steps:
 - task: UseDotNet@2
