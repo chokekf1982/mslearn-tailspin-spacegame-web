@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using System;
 
 namespace TailSpin.SpaceGame.Web
 {
@@ -13,5 +14,6 @@ namespace TailSpin.SpaceGame.Web
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+        Console.WriteLine("test");
     }
 }
